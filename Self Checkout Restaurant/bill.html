@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body onload="printbill();return false">
+<div id="bill">
+    <div id="billheader">
+    <h1 id="cafename">DAKSHIN BRUNCH</h1>
+    <div id="greeting">
+        <p id="thanks">ENJOY YOUR MEAL</p>
+        <p id="revisit">PLEASE VISIT AGAIN</p>
+        <p id="address"></p>
+    </div>
+</div>
+<div id="itemsbought">
+    <table id="billtable">
+        <tr>
+            <th>Sr.No</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </table>
+</div>
+<div id="billing">
+<p id="billamount"></p>
+<pre id="taxes">Taxes
+    Service Tax: 5% = 
+    GST: 18% = 
+</pre>
+<p id="finalamount"></p>
+</div>
+<div id="billfooter">
+    <b>PLEASE NOTE</b>
+    <br>
+    <p id="TnC">1.Packing of left over items is not allowed
+
+    </p>
+    <p id="TnC">
+        2.For ordering online visit us at Dakshin Brunch.in  
+        
+            </p><p id="TnC">
+                3.Order can not be modified once the bill has been generated
+                
+                    </p><p id="TnC">
+                        4.Fine will be imposed on causing damage to any restaurant property
+                            </p>
+</div>
+</div>
+<button onclick="movetopayment()" id="pbtn">Print Bill</button> 
+   <script src="complete.js"></script>
+</body>
+</html>
